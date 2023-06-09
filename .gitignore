@@ -1,0 +1,7 @@
+# virtual env
+venv
+*.iml
+*.local
+*.vscode
+# img outputs
+outputs/*

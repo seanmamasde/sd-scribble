@@ -1,0 +1,69 @@
+{
+    "interface_width": 1280,
+    "interface_height": 720,
+    "url": "http://127.0.0.1:7860",
+    "autosave_seed": "true",
+    "autosave_prompt": "true",
+    "autosave_negative_prompt": "true",
+    "autosave_images": "true",
+    "autosave_images_max": 5,
+    "preset_fields": [
+        "hr_scale",
+        "hr_upscaler",
+        "denoising_strength"
+    ],
+    "cn_preset_fields": [
+        "controlnet_model",
+        "controlnet_weight",
+        "controlnet_guidance_end"
+    ],
+    "hr_scales": [
+        1.0,
+        1.25,
+        1.5,
+        2
+    ],
+    "hr_upscalers": [
+        "Latent (bicubic)",
+        "R-ESRGAN 4x+"
+    ],
+    "denoising_strengths": [
+        0.6,
+        0.4,
+        0.5
+    ],
+    "controlnet_weights": [
+        0.6,
+        1.0,
+        1.6
+    ],
+    "controlnet_guidance_ends": [
+        1.0,
+        0.2,
+        0.3
+    ],
+    "controlnet_models": [
+        "control_v11p_sd15_scribble",
+        "control_v11p_sd15_lineart",
+        "control_v11p_sd15s2_lineart_anime"
+    ],
+    "detectors": [
+        "lineart",
+        "lineart_coarse",
+        "pidinet_sketch",
+        "pidinet_scribble"
+    ],
+    "samplers": [
+        "DPM++ 2M Karras",
+        "DDIM",
+        "Euler",
+        "Euler a",
+        "DPM++ SDE Karras"
+    ],
+    "batch_sizes": [
+        1,
+        4,
+        9,
+        16
+    ]
+}
