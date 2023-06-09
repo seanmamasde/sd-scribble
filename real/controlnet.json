@@ -1,6 +1,6 @@
 {
-    "prompt": "a ball of used tissue",
-    "negative_prompt": "(worst quality,low quality,bad quality,normal quality:1.2)",
+    "prompt": "An isolated island surrounded by the vast ocean, covered in green, has beach.",
+    "negative_prompt": "(worst quality,low quality,bad quality,normal quality:1.2), not top down view.",
     "enable_hr": "false",
     "seed": 74,
     "batch_size": 1,

@@ -330,7 +330,7 @@ if img2img:
 # Set up the display
 full_screen = False
 screen = pygame.display.set_mode((width * (1 if img2img else 2), height))
-display_caption = "Sd Paint"
+display_caption = "sd-scribble"
 pygame.display.set_caption(display_caption)
 
 # Setup text
@@ -892,7 +892,7 @@ def img2img_submit(force=False):
             return_seed = r_info["seed"]
             global display_caption
             display_caption = (
-                f"Sd Paint | Seed: {return_seed} | Prompt: {return_prompt}"
+                f"sd-scribble | Seed: {return_seed} | Prompt: {return_prompt}"
             )
         else:
             osd(text=f"Error code returned: HTTP {response.status_code}")
@@ -1319,7 +1319,7 @@ def send_request():
         return_prompt = r_info["prompt"]
         return_seed = r_info["seed"]
         global display_caption
-        display_caption = f"Sd Paint | Seed: {return_seed} | Prompt: {return_prompt}"
+        display_caption = f"sd-scribble | Seed: {return_seed} | Prompt: {return_prompt}"
     else:
         osd(text=f"Error code returned: HTTP {response.status_code}")
     server_busy = False

@@ -3,18 +3,18 @@ import subprocess
 import os
 import time
 
-image = open("test-img.jpg", "rb")
+image = open("test-img.png", "rb")
 image = image.read()
 
 res = requests.post(
     "http://localhost:5000",
     files={"image": image},
-    headers={"prompt": "landscape with castles"},
+    headers={"prompt": "beautiful hand-drawn mountain ranges, detailed"},
 )
 
 while res.status_code != 200:
     if res.status_code == 200:
-        output = open("test-output.png", "wb")
+        output = open("test-output.jpg", "wb")
         output.write(res.content)
         output.close()
         subprocess.run(

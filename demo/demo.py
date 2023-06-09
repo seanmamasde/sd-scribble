@@ -1,7 +1,7 @@
-import torch
 from flask import Flask, request, send_file
 from PIL import Image
 from io import BytesIO
+import torch
 from diffusers import StableDiffusionImg2ImgPipeline
 
 # the model can be modified
